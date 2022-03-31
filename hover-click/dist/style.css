@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: #C2EABD;
+}
+
+input{
+  display: none;
+}
+
+h1 {
+  font-size: 1.75rem;
+  user-select: none;
+}
+
+
+.container{
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container .btn {
+  border: 1px solid #ED254E;
+/*   padding: 1rem; */
+  width: 200px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+.container .btn .slider {
+  width: 400px;
+  overflow: hidden;
+  display: flex;
+  transition: all 0.3s ease-out;
+}
+
+.first h1, .second h1 {
+  padding: 0.8rem;
+}
+
+.first h1 {
+  width: 200px;
+  color: #ED254E;
+}
+
+.second h1 {
+  width: 200px;
+  background-color: #ED254E;
+  border-radius: 20px;
+  color: #C2EABD;
+}
+
+.container .btn .slider:hover{
+  transform: translate(-200px);
+  cursor: pointer;
+}
+
+.text {
+  display: none;
+  width: 200px;
+  margin: 50px;
+}
+
+
+#boxy:checked +label {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ED254E;
+  display: flex;
+  transition: 1s ease;
+  justify-content: center;
+  align-items: center;
+}
+
+#boxy:checked +label .btn{
+  border: 1px solid #F9DC5C;
+}
+
+#boxy:checked +label .first h1 {
+  background-color: #ED254E;
+  color: #F9DC5C;
+  border-radius: 40px;
+}
+
+
+#boxy:checked +label .second h1 {
+  background-color: #F9DC5C;
+  color: #ED254E;
+}
