@@ -1,33 +1,58 @@
-let clicker = document.getElementById("button-taco");
+let burgerButton = document.getElementById("burgerButton");
 
-clicker.addEventListener("click", function( event ) {
+burgerButton.addEventListener("click", function( event ) {
   {
 
-	var taco = document.createElement('h2');
-  taco.innerText = "🌮";
-  taco.setAttribute("class", "crazy");
+	var burger = document.createElement('h2');
+  burger.innerText = "🍔";
+  burger.setAttribute("class", "crazy");
   
-	document.getElementById("cont").appendChild(taco);
+	document.getElementById("cont").appendChild(burger);
 }
   }
   );
 
-let clickerBurrito = document.getElementById("button-burrito");
+let friesButton = document.getElementById("friesButton");
 
-clickerBurrito.addEventListener("click", function( event ) {
+friesButton.addEventListener("click", function( event ) {
   {
 
-	var burrito = document.createElement('h2');
-  burrito.innerText = "🌯";
-  burrito.setAttribute("class", "crazy");
+	var fries = document.createElement('h2');
+  fries.innerText = "🍟";
+  fries.setAttribute("class", "crazy");
   
-	document.getElementById("cont").appendChild(burrito);
+	document.getElementById("cont").appendChild(fries);
 }
   }
   );
 
+let shakeButton = document.getElementById("shakeButton");
 
+shakeButton.addEventListener("click", function( event ) {
+  {
 
+	var shake = document.createElement('h2');
+  shake.innerText = "🥤";
+  shake.setAttribute("class", "crazy");
+  
+	document.getElementById("cont").appendChild(shake);
+}
+  }
+  );
+
+  let iceCreamButton = document.getElementById("iceCreamButton");
+
+  iceCreamButton.addEventListener("click", function( event ) {
+    {
+  
+    var iceCream = document.createElement('h2');
+    iceCream.innerText = "🍦";
+    iceCream.setAttribute("class", "crazy");
+    
+    document.getElementById("cont").appendChild(iceCream);
+  }
+    }
+    );
 
 
 

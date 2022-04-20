@@ -9,12 +9,14 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: 'Anton', sans-serif;
+  background-color: #fdfffc;
 }
 
 .container {
-  width: 50%;
+  width: 90%;
   min-height: 5rem;
-  background-color: red;
+  background-color: #D7263D;
   display: flex;
   justify-content: flex-end;
   padding: 0rem 2rem;
@@ -22,6 +24,7 @@ body{
   align-items: center;
 /*   position: relative; */
   border-radius: 40px;
+  margin: 0rem auto;
 }
 
 
@@ -50,20 +53,32 @@ body{
 }
 
 .button, .button2, .button3 {
-  background-color: red;
+  background-color: #D7263D;
   padding: 1rem;
   border-radius: 4px;
   z-index: 40;
   margin: 1rem;
   user-select: none;
+  color: #fdfffc;
 }
 
+.button2, .button3 {
+  letter-spacing: 3px;
+  padding: 1.5rem;
+}
+
+.button2 {
+  color: #F1D302;
+}
+
+
 .button {
-  height: 5rem;
-  width: 5rem;
+  height: 6rem;
+  width: 6rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
 
 
@@ -72,12 +87,65 @@ body{
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 5rem;
 }
 
+.container-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #D7263D;
+  color: #fdfffc;
+  padding: 1rem;
+}
+
+.container-logo h1 {
+  font-size: 8rem;
+  letter-spacing: 5px;
+}
+
+.container-logo h4 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  margin-top: -3.2rem;
+  /* margin-right: -20rem; */
+  color: #F1D302;
+}
 .center {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+/* .button h1, .button p {
+  margin: 0.3rem;
+} */
+
+.button p {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.8rem;
+  color: #fdfffc;
+}
+
+span {
+  font-size: 1rem;
+  text-decoration-line: underline;
+  vertical-align:super; 
+}
+
+.extras {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+.container-logo p {
+  font-family: 'Damion', cursive;
+  font-size: 1.5rem;
+  margin-top: -2rem;
+  margin-left: 3rem;
 }
