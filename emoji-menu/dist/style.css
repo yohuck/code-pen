@@ -157,3 +157,8 @@ body{
   margin-top: -2rem;
   margin-left: 3rem;
 }
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
