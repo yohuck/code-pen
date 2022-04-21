@@ -1,3 +1,5 @@
+
+// an array containing each menu item as an object
 const menuItems = [
     { _name: 'burger',
     _price: 2.25,
@@ -22,10 +24,12 @@ const menuItems = [
     } 
 ]
 
+//global variables
 let orderTicket = 001
 let orderItems = []
 let orderTotal = 0
 let orderHistory = []
+let currentOrder = []
 
 
 const fetchItem = itemToFetch => menuItems.find( object => object._name === itemToFetch );
@@ -44,11 +48,15 @@ const placeOrder = arr => {
 }
 
 const lastOrder = ['fries', 'ice-cream']
-const currentOrder = ['burger', 'burger', 'fries', 'ice-cream']
+const firstOrder = ['burger', 'burger', 'fries', 'ice-cream']
 
-const processOrder = orderHistory.push(placeOrder)
+const processOrder = arr => orderHistory.push(placeOrder(arr));
 
+const addItemToCurrent = item => currentOrder.push(item);
+
+addItemToCurrent('burger'); //click burger button
+addItemToCurrent('fries'); // click fries button
+console.log(currentOrder); // current order list to be processed
 placeOrder(currentOrder);
-placeOrder(lastOrder);
-
-console.log(orderHistory)
+console.log(orderItems);
+console.log(orderTotal);
