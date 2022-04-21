@@ -135,6 +135,13 @@ span {
   vertical-align:super; 
 }
 
+#total {
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration-line:none;
+  vertical-align:middle; 
+}
+
 .extras {
   width: 40%;
   display: flex;
