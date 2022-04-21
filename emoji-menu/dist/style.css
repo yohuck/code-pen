@@ -129,11 +129,12 @@ body{
   color: #fdfffc;
 }
 
-span {
+.super {
   font-size: 1rem;
   text-decoration-line: underline;
   vertical-align:super; 
 }
+
 
 #total {
   font-size: 2rem;
