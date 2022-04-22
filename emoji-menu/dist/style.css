@@ -8,7 +8,18 @@ body{
   justify-content: center;
   align-items: center;
   font-family: 'Anton', sans-serif;
-  background-color:#e6d358;
+  background-color:#FFE184;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .container-logo{
@@ -18,8 +29,9 @@ body{
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #D7263D;
+  background-color: #E46A2D;
   color: #fdfffc;
+  align-self: baseline;
 }
 
 .logo {
@@ -27,36 +39,25 @@ body{
   max-width: 450px;
   text-align: right;
   margin: 0 auto;
+  display: flex;
 }
 
-
-.container-logo h1 {
-  font-size: 5rem;
-  letter-spacing: 1px;
+.logo img {
   width: 100%;
+  margin: 0;
+  margin-top: -4rem;
+  margin-bottom: -4rem;
 }
 
-.container-logo h4 {
-  font-size: 2.5rem;
-  color: #e6d358;
-  margin-top: -0.8em;
-}
-
-.container-logo p {
-  font-family: 'Damion', cursive;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  /* margin-right: -13px; */
-}
 
 .container-menu{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   width: 90%;
   flex-wrap: wrap;
-  margin: 1rem;
+  margin: 1rem auto;
+  /* height: 100%; */
 }
 
 .button {
@@ -66,7 +67,7 @@ body{
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  background-color: #D7263D;
+  background-color: #E46A2D;
   border-radius: 4px;
   margin: 0.3rem;
   user-select: none;
@@ -78,27 +79,39 @@ body{
   margin: 0 auto;
   width: 90%;
   min-height: 5rem;
-  background-color: #D7263D;
+  background-color: #E46A2D;
   display: flex;
   justify-content: flex-end;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
   flex-wrap: wrap;
   align-items: center;
 /*   position: relative; */
   border-radius: 40px;
   margin: 0rem auto;
+  height: 5rem;
+}
+
+.cont {
+  flex-wrap:initial;
+  overflow:hidden;
+}
+
+.cont p {
+  font-size: 0.5rem;
+  letter-spacing: 0.1px;
+  line-height: 0.1em;
 }
 
 .crazy {
   opacity: 1;
   transition-property: all;
   transition-duration: 1s;
-  margin: 1.2rem;
+  margin: 0.5rem;
 }
 
 .button2, .button3 {
-  width: 90%;
-  background-color: #D7263D;
+  width: 40%;
+  background-color: #E46A2D;
   border-radius: 4px;
   margin: 0.5rem auto;
   user-select: none;
@@ -106,13 +119,23 @@ body{
   letter-spacing: 3px;
   padding: 0.5rem;
   text-align: center;
+  max-width: 200px;
 }
 
 .button2 {
-  color: #F1D302;
+  color: #FFE184;
 }
 
+.container-1 {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
 
+}
 
 
 
@@ -137,6 +160,15 @@ body{
   font-family: 'Courier New', Courier, monospace;
   text-decoration-line:none;
   vertical-align:middle; 
+  color: #86330A;
+}
+
+#dollar {
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration-line:none;
+  vertical-align:middle; 
+  color: #86330A;
 }
 
 
