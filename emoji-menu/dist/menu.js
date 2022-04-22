@@ -67,7 +67,7 @@ burgerButton.addEventListener("click", function( event ) {
     currentTotal = Math.round(100*currentTotal)/100;
 
 
-	var burger = document.createElement('h2');
+	var burger = document.createElement('p');
     burger.innerText = "🍔";
     burger.setAttribute("class", "crazy");
 
@@ -88,7 +88,7 @@ friesButton.addEventListener("click", function( event ) {
     currentTotal = currentTotal + fetchPrice('fries')
     currentTotal = Math.round(100*currentTotal)/100;
 
-	var fries = document.createElement('h2');
+	var fries = document.createElement('p');
   fries.innerText = "🍟";
   fries.setAttribute("class", "crazy");
   
@@ -107,7 +107,7 @@ friesButton.addEventListener("click", function( event ) {
     currentTotal = currentTotal + fetchPrice('soda')
     currentTotal = Math.round(100*currentTotal)/100;
   
-    var soda = document.createElement('h2');
+    var soda = document.createElement('p');
     soda.innerText = "🥤";
     soda.setAttribute("class", "crazy");
     
@@ -127,7 +127,7 @@ friesButton.addEventListener("click", function( event ) {
     currentTotal = currentTotal + fetchPrice('ice-cream')
     currentTotal = Math.round(100*currentTotal)/100;
   
-    var iceCream = document.createElement('h2');
+    var iceCream = document.createElement('p');
     iceCream.innerText = "🍦";
     iceCream.setAttribute("class", "crazy");
     
