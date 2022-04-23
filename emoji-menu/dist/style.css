@@ -18,7 +18,7 @@ body{
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 100%;
 }
 
@@ -55,6 +55,7 @@ main {
   align-items: center;
   justify-content: center;
   width: 90%;
+  max-width: 300px;
   flex-wrap: wrap;
   margin: 1rem auto;
   /* height: 100%; */
