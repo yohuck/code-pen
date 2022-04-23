@@ -87,6 +87,11 @@ main {
   border: 3px solid #86330A;
 }
 
+.button:hover, .button:active, .button:target,
+.button2:hover, .button2:active, .button2:target,
+.button3:hover, .button3:active, .button3:target {
+  background-color: #86330A;
+}
 
 .container {
   margin: 0 auto;
@@ -140,7 +145,7 @@ main {
 }
 
 .button2 {
-  color: #FFE184;
+  color: #fcbe05;
 }
 
 .container-1 {
